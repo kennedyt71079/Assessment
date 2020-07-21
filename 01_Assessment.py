@@ -1,6 +1,6 @@
 import random
 
-
+# Number Checker Fucntion
 def intcheck(question, low=None, high=None):
 
     # Sets up error messages
@@ -44,12 +44,16 @@ questions = intcheck("How many questions do you want to play? ")
 
 random1 = random.randint(low, high)
 random2 = random.randint(low, high)
+answer = random1+random2
 
+# Generates the Equation
 guess = intcheck("What is {} + {} = ".format(random1, random2))
+
+# Checks to see if the answer is correct
 if guess == random1 + random2:
     print("That is correct!")
 else:
-    print("That is incorrect")
+    print("That is incorrect, The answer was {}".format(answer))
 
 print(random1)
 print(random2)
