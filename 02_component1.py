@@ -40,9 +40,12 @@ def intcheck(question, low=None, high=None):
 # Main Routine
 low = intcheck("Please choose a low number - ")
 high = intcheck("Please choose a high number - ", low + 1)
+questions = intcheck("How many rounds do you want to play? ")
 
 random1 = random.randint(low, high)
 random2 = random.randint(low, high)
+
+guess = intcheck("What is {} + {} = ".format(random1, random2))
 
 print(random1)
 print(random2)
