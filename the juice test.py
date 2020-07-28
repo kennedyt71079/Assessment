@@ -1,6 +1,6 @@
 import random
 
-# Number Checking Function
+# Number Checker Fucntion
 def intcheck(question, low=None, high=None):
 
     # Sets up error messages
